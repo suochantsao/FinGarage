@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         WorkSans: ["Work Sans", "sans-serif"],
+        NotoSans: ["Noto Sans TC", "sans-serif"],
+      },
+      backgroundImage: {
+        "home-banner": "url('./images/banner.jpg')",
       },
     },
   },

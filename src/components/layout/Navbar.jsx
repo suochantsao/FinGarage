@@ -1,16 +1,14 @@
 function Navbar() {
   return (
     <header className="flex justify-between items-center container mx-auto p-5 ">
-      <h1 className="font-WorkSans text-2xl text-sky-700 cursor-pointer">
-        FinGarage
-      </h1>
+      <h1 className="main-text text-2xl cursor-pointer">FinGarage</h1>
       <nav>
-        <ul className="flex space-x-6">
-          <li className="cursor-pointer">文章專區</li>
-          <li className="cursor-pointer">討論專區</li>
-          <li className="cursor-pointer">點數排行</li>
-          <li className="cursor-pointer">服務內容</li>
-          <li className="cursor-pointer">註冊和登入</li>
+        <ul className="flex space-x-6 font-NotoSans">
+          <li className="btn">文章專區</li>
+          <li className="btn">討論專區</li>
+          <li className="btn">點數排行</li>
+          <li className="btn">服務內容</li>
+          <li className="btn">註冊和登入</li>
         </ul>
       </nav>
     </header>

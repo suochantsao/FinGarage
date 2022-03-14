@@ -1,6 +1,22 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply cursor-pointer;
+  }
+  .main-text {
+    @apply font-WorkSans text-sky-900;
+  }
+  .text-shadow-wh {
+    text-shadow: white 2px 1.5px 4px;
+  }
+  .text-shadow-bk {
+    text-shadow: black 2px 1.5px 10px;
+  }
+}
