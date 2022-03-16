@@ -10,6 +10,12 @@
   .btn {
     @apply cursor-pointer;
   }
+  .nav-btn {
+    @apply px-2 py-2 transition duration-200 border-b-4 border-transparent hover:border-sky-600;
+  }
+  .primary-btn {
+    @apply px-5 py-2 bg-sky-900 text-white rounded-md hover:bg-sky-600;
+  }
   .main-text {
     @apply font-WorkSans text-sky-900;
   }
