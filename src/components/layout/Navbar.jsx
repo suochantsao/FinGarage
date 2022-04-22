@@ -8,9 +8,15 @@ function Navbar() {
       </h1>
       <nav>
         <ul className="flex space-x-6 font-NotoSans">
-          <li className="nav-btn btn">精選文章</li>
-          <li className="nav-btn btn">討論專區</li>
-          <li className="nav-btn btn">點數排行</li>
+          <li className="nav-btn btn">
+            <Link to="/article">精選文章</Link>
+          </li>
+          <li className="nav-btn btn">
+            <Link to="/forum">討論專區</Link>
+          </li>
+          <li className="nav-btn btn">
+            <Link to="/charts">點數排行</Link>
+          </li>
           <li className="nav-btn btn">
             <Link to="/about">關於我們</Link>
           </li>
