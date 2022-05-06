@@ -15,11 +15,9 @@ function Navbar() {
             <Link to="/forum">討論專區</Link>
           </li>
           <li className="nav-btn btn">
-            <Link to="/charts">點數排行</Link>
+            <Link to="/leaderboard">點數排行</Link>
           </li>
-          <li className="nav-btn btn">
-            <Link to="/about">關於我們</Link>
-          </li>
+          <li className="nav-btn btn">關於我們</li>
           <li className="primary-btn btn">註冊和登入</li>
         </ul>
       </nav>
