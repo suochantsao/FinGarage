@@ -8,17 +8,21 @@
 
 @layer components {
   .btn {
-    @apply cursor-pointer;
+    @apply cursor-pointer text-xl;
   }
   .nav-btn {
-    @apply px-2 py-2 transition duration-200 border-b-4 border-transparent hover:border-sky-600;
+    @apply px-2 py-2 transition duration-200 border-b-2 border-transparent  text-white hover:border-[#4a6dff] hover:text-[#4a6dff];
   }
   .primary-btn {
-    @apply px-5 py-2 bg-sky-900 text-white rounded-md hover:bg-sky-600;
+    @apply px-5 py-2 border-2 border-[#4a6dff] text-white rounded-md hover:bg-[#4a6dff];
   }
-  .main-text {
+  .home {
+    padding-top: 121px;
+    height: calc(100vh - 121px);
+  }
+  /* .main-text {
     @apply font-WorkSans text-sky-900;
-  }
+  } */
   .text-shadow-wh {
     text-shadow: white 2px 1.5px 4px;
   }
