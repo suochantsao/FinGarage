@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className='fixed w-full bg-gradient-to-r from-[#1a1b1e] to-[#414141]'>
+    <div className='fixed w-full bg-[#1a1b1e]'>
       <header className="flex justify-between items-center container mx-auto p-4">
         <h1 className="text-2xl">
           <Link to="/">
-            <img src={window.location.origin + '/images/logo.png'} alt='' />
+            <img className='w-5/6' src={window.location.origin + '/images/logo.png'} alt='' />
           </Link>
         </h1>
         <nav>
-          <ul className="flex space-x-6 font-NotoSans pt-1">
+          <ul className="flex space-x-6 font-NotoSans pt-1 text-white">
             <li className="nav-btn btn">
               <Link to="/article">精選文章</Link>
             </li>
@@ -26,7 +26,6 @@ function Navbar() {
         </nav>
       </header>
     </div>
-   
   );
 }
 

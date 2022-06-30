@@ -11,18 +11,18 @@
     @apply cursor-pointer text-xl;
   }
   .nav-btn {
-    @apply px-2 py-2 transition duration-200 border-b-2 border-transparent  text-white hover:border-[#4a6dff] hover:text-[#4a6dff];
+    @apply px-2 py-2 transition duration-200 border-b-2 border-transparent hover:border-[#4a6dff] hover:text-[#4a6dff];
   }
   .primary-btn {
-    @apply px-5 py-2 border-2 border-[#4a6dff] text-white rounded-md hover:bg-[#4a6dff];
+    @apply px-5 py-2 border-2 border-[#4a6dff] rounded-md hover:bg-[#4a6dff];
+  }
+  .secondary-btn{
+    @apply px-5 py-3 rounded-md text-white bg-[#4a6dff] hover:bg-[#2eb9ff]
   }
   .home {
     padding-top: 121px;
-    height: calc(100vh - 121px);
+    /* height: calc(100vh); */
   }
-  /* .main-text {
-    @apply font-WorkSans text-sky-900;
-  } */
   .text-shadow-wh {
     text-shadow: white 2px 1.5px 4px;
   }
