@@ -1,10 +1,10 @@
 // Components
-import Navbar from "./Navbar";
+import Header from "./Header";
 
 function MainLayout(props) {
   return (
     <div>
-      <Navbar />
+      <Header />
       <main>{props.children}</main>
     </div>
   );
