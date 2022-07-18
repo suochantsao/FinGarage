@@ -8,7 +8,7 @@
 
 @layer components {
   .btn {
-    @apply cursor-pointer text-xl;
+    @apply cursor-pointer text-xl text-white;
   }
   .nav-btn {
     @apply px-2 py-2 transition duration-200 border-b-2 border-transparent hover:border-[#4a6dff] hover:text-[#4a6dff];
@@ -19,14 +19,10 @@
   .secondary-btn{
     @apply px-5 py-3 rounded-md text-white bg-[#4a6dff] hover:bg-[#2eb9ff]
   }
-  .home {
-    padding-top: 121px;
-    /* height: calc(100vh); */
+  .hideMenuNav {
+    @apply hidden
   }
-  .text-shadow-wh {
-    text-shadow: white 2px 1.5px 4px;
-  }
-  .text-shadow-bk {
-    text-shadow: black 2px 1.5px 10px;
+  .showMenuNav {
+    @apply flex absolute w-full h-screen top-0 left-0 bg-white z-10 flex-col justify-evenly items-center
   }
 }

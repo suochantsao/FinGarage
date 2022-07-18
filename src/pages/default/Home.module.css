@@ -1,0 +1,10 @@
+.home {
+  padding-top: 121px;
+  /* height: calc(100vh); */
+}
+.text-shadow-wh {
+  text-shadow: white 2px 1.5px 4px;
+}
+.text-shadow-bk {
+  text-shadow: black 2px 1.5px 10px;
+}
