@@ -23,20 +23,19 @@ export default function Header() {
               onClick={() => setIsNavOpen((prev) => !prev)} 
               // toggle isNavOpen state on click
             >
-              <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-white rounded"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-white rounded"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-white rounded"></span>
             </div>
 
-            <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-              <p>toggle class based on isNavOpen state</p> 
+            <div className={isNavOpen ? "show-menu-nav" : "hide-menu-nav"}>
               <div
                 className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
                 onClick={() => setIsNavOpen(false)} 
                 // change isNavOpen state to false to close the menu
               >
                 <svg
-                  className="h-8 w-8 text-gray-600"
+                  className="h-8 w-8 text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -48,15 +47,21 @@ export default function Header() {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-                <li className="border-b border-gray-400 my-8 uppercase">
+              <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]" onClick={() => setIsNavOpen(false)}>
+                <li className="mobile-nav-btn">
                   <Link to="">挑戰關卡</Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
+                <li className="mobile-nav-btn">
                   <Link to="/forum">討論專區</Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
+                <li className="mobile-nav-btn">
                   <Link to="/leaderboard">點數排行</Link>
+                </li>
+                <li className="mobile-nav-btn">
+                  <Link to="/about">關於我們</Link>
+                </li>
+                <li className="mobile-nav-btn">
+                  <Link to="">註冊或登入</Link>
                 </li>
               </ul>
             </div>
@@ -75,7 +80,9 @@ export default function Header() {
             <li className="nav-btn btn">
               <Link to="/about">關於我們</Link>
             </li>
-            <li className="primary-btn btn">註冊或登入</li>
+            <li className="primary-btn btn">
+              <Link to="">註冊或登入</Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -83,38 +90,4 @@ export default function Header() {
   );
 }
 
-// function Header() {
-//   return (
-//     <div className="header fixed z-10 w-full bg-[#1a1b1e]">
-//       <header className="flex justify-between items-center container mx-auto p-4">
-//         <h1 className="text-2xl">
-//           <Link to="/">
-//             <img
-//               className="w-5/6"
-//               src={window.location.origin + "/images/logo.png"}
-//               alt=""
-//             />
-//           </Link>
-//         </h1>
-//         <nav>
-//           <ul className="flex space-x-6 font-NotoSans pt-1 text-white">
-//             <li className="nav-btn btn">
-//               <Link to="">挑戰關卡</Link>
-//             </li>
-//             <li className="nav-btn btn">
-//               <Link to="/forum">討論專區</Link>
-//             </li>
-//             <li className="nav-btn btn">
-//               <Link to="/leaderboard">點數排行</Link>
-//             </li>
-//             <li className="nav-btn btn">
-//               <Link to="/about">關於我們</Link>
-//             </li>
-//             <li className="primary-btn btn">註冊或登入</li>
-//           </ul>
-//         </nav>
-//       </header>
-//     </div>
-//   );
-// }
 

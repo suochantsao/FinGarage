@@ -5,27 +5,27 @@ function Home() {
     <div className={classes.home}>
       <div className="container mx-auto py-4 text-[#1a1b1e] text-center bg-cover font-NotoSans home">
         <ul className="flex flex-col justify-center items-center lg:flex-row">
-          <li className="w-full px-6 pt-24 flex flex-col justify-center lg:w-2/5 lg:pl-10">
+          <li className="w-full px-6 pt-2 lg:pt-24 flex flex-col justify-center lg:w-2/5 lg:pl-10">
             <h2 className="text-2xl lg:text-left lg:text-4xl tracking-wide leading-snug">
               你想知道的財經知識<br></br>盡在 FinGarage 財經知識庫
             </h2>
             <p className="lg:text-left my-4">
               提供各種投資工具介紹和討論，讓你在投資路上組隊闖關不孤單
             </p>
-            <button className="mt-12 w-5/6 mx-auto lg:mx-0 lg:w-1/2 secondary-btn transition ease-in-out hover:scale-105 duration-100">
+            <button className="mt-6 lg:mt-12 w-5/6 mx-auto lg:mx-0 lg:w-1/2 secondary-btn transition ease-in-out hover:scale-105 duration-100">
               立即體驗
             </button>
           </li>
-          <li className="hidden lg:h-[450px] lg:overflow-hidden lg:block">
+          <li className="lg:h-[450px] lg:overflow-hidden lg:block">
             <img
-              className="mt-[-60px]"
+              className="w-4/5 mx-auto lg:mt-[-60px] lg:w-full"
               src={window.location.origin + "/images/landing.gif"}
               alt=""
             />
           </li>
         </ul>
       </div>
-      <div className="content mt-[98px] bg-[#1a1b1e] py-5 lg:pt-12 lg:pb-20">
+      <div className="content mt-0 lg:mt-[98px] bg-[#1a1b1e] py-5 lg:pt-12 lg:pb-20">
         <main className="container mx-auto px-10 py-14">
           <h3 className="text-white text-xl text-center lg:text-left lg:text-2xl">完整的財經投資知識服務平台</h3>
           <ul className="service-section flex flex-col mt-10 space-y-10 lg:space-x-10 lg:space-y-0 lg:flex-row">
@@ -65,7 +65,7 @@ function Home() {
           </ul>
         </main>
       </div>
-      <div className="container mx-auto mb-28 pb-4 text-[#1a1b1e] text-center bg-cover font-NotoSans home">
+      <div className="container mx-auto mb-28 lg:pb-4 text-[#1a1b1e] text-center bg-cover font-NotoSans home">
         <ul className="flex flex-col justify-center items-center lg:flex-row">
           <li className="lg:h-[460px] lg:overflow-hidden">
             <img

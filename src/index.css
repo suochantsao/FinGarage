@@ -11,7 +11,7 @@
     @apply cursor-pointer text-xl text-white;
   }
   .nav-btn {
-    @apply px-2 py-2 transition duration-200 border-b-2 border-transparent hover:border-[#4a6dff] hover:text-[#4a6dff];
+    @apply p-2 transition duration-200 border-b-2 border-transparent hover:border-[#4a6dff] hover:text-[#4a6dff];
   }
   .primary-btn {
     @apply px-5 py-2 border-2 border-[#4a6dff] rounded-md hover:bg-[#4a6dff];
@@ -19,10 +19,13 @@
   .secondary-btn{
     @apply px-5 py-3 rounded-md text-white bg-[#4a6dff] hover:bg-[#2eb9ff]
   }
-  .hideMenuNav {
+  .hide-menu-nav {
     @apply hidden
   }
-  .showMenuNav {
-    @apply flex absolute w-full h-screen top-0 left-0 bg-white z-10 flex-col justify-evenly items-center
+  .show-menu-nav {
+    @apply flex absolute w-full h-screen top-0 left-0 bg-[#1a1b1e] z-10 flex-col justify-evenly items-center
+  }
+  .mobile-nav-btn {
+    @apply text-white text-2xl my-6 p-2 transition duration-200 border-b-2 border-transparent hover:border-[#4a6dff] hover:text-[#4a6dff]
   }
 }
