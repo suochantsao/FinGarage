@@ -5,7 +5,7 @@ function Home() {
     <div className={classes.home}>
       <div className="container mx-auto py-4 text-[#1a1b1e] text-center bg-cover font-NotoSans home">
         <ul className="flex flex-col justify-center items-center lg:flex-row">
-          <li className="w-full px-6 pt-2 lg:pt-24 flex flex-col justify-center lg:w-2/5 lg:pl-10">
+          <li className="w-full px-6 pt-2 lg:pt-24 flex flex-col justify-center lg:w-2/5">
             <h2 className="text-2xl lg:text-left lg:text-4xl tracking-wide leading-snug">
               你想知道的財經知識<br></br>盡在 FinGarage 財經知識庫
             </h2>

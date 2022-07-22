@@ -1,4 +1,3 @@
-// Components
 import MainLayout from "../../components/layout/MainLayout";
 import { Outlet } from "react-router-dom";
 

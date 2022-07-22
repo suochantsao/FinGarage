@@ -61,7 +61,7 @@ export default function Header() {
                   <Link to="/about">關於我們</Link>
                 </li>
                 <li className="mobile-nav-btn">
-                  <Link to="">註冊或登入</Link>
+                  <Link to="/user/signin">註冊或登入</Link>
                 </li>
               </ul>
             </div>
@@ -81,7 +81,7 @@ export default function Header() {
               <Link to="/about">關於我們</Link>
             </li>
             <li className="primary-btn btn">
-              <Link to="">註冊或登入</Link>
+              <Link to="/user/signin">註冊或登入</Link>
             </li>
           </ul>
         </nav>
